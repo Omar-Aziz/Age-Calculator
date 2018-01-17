@@ -272,8 +272,10 @@ class AgeCalculator(tk.Tk):
 	def gmail(self):
 		try:
 			gmail_signature = '\n\n\n\n-Omar'
-			yag = yagmail.SMTP('obinsalamah@gmail.com', 'cjcrgnwqpzkklyhh')
-			yag.send('omar-binsalamah@uiowa.edu', 'Facts about your DOB!',
+			# here you put the email address of the sender and secret key
+			yag = yagmail.SMTP('', '')
+			# here you put email address of receiver and the message
+			yag.send('', 'Facts about your DOB!',
 			         (self.calculate_share + self.zeller_share + gmail_signature))
 		except Exception:
 			tkinter.messagebox.showerror('error', 'why email nothing? provide input...')
@@ -281,10 +283,14 @@ class AgeCalculator(tk.Tk):
 	def tweet(self):
 		try:
 			twitter_signature = '\n(This tweet was generated using Py3.6)'
-			access_token = '286033545-peJxOkPFA0PZ06vOibaVwU5wFZCWYvwDguc1uKUH'
-			access_token_secret = 'D70g3xjTeoiYS4ZRTtgiVDzBDRDkpWDW9wnfEpgROsE61'
-			consumer_key = 'm9yN3Ssc5Y0sgGyyWwvQxJVnm'
-			consumer_secret = 'CUE1Rjat0hoQFRrx8NFYQ6lMcmjJj2MQ5YL4QZR7guDDLvRCcK'
+			# here you put your access token from Twitter
+			access_token = ''
+			# here you put your access token secret from Twitter
+			access_token_secret = ''
+			# here you put your consumer key from Twitter
+			consumer_key = ''
+			# here you put your consumer secret from Twitter
+			consumer_secret = ''
 
 			t = Twitter(auth = OAuth(access_token, access_token_secret, consumer_key, consumer_secret))
 			t.statuses.update(status = (self.calculate_share + self.zeller_share + twitter_signature))
