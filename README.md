@@ -1,15 +1,12 @@
 # Age-Calculator
-Calculate age based on date of birth and more
-
 # Author:  OMAR BIN SALAMAH
 # Version: 2017-10-4
+Calculate age based on date of birth and more.
 
-## # # # # # # # # # # # # # # # # # # # # # # # # # # # # ##
-# Description: program that uses an algorithm to determine  #
-# the day of the week a person was born based on their DOB  #
-# program scrapes Wikipedia and pulls a summary of the year #
-# program scrapes worldhistoryproject.org and pulls what    #
-# happened that year. Program tweets, emails and Facebook   #
-# posts the result. Program prints the results, saves the   #
-# results as PDF or as a screen shot!                       #
-## # # # # # # # # # # # # # # # # # # # # # # # # # # # # ##
+This program determines the day of the week a person was born based on their date of birth.
+Features:
+- Scrapes wikipedia.com and pulls the summary of that year
+- Scrapes worldhistoryproject.org and pulls highlights of events that happened that year.
+- Shares results on Twitter, Email, and Facebook
+- Saves results as PDF, prints results, and takes screenshot of results.
+- More to come :)
