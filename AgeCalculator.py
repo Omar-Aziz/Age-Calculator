@@ -219,10 +219,6 @@ class AgeCalculator(tk.Tk):
 		except Exception:
 			tkinter.messagebox.showerror('error message', 'you did not provide any input')
 
-		#     mercury = wikipedia.summary("Mercury")
-		#     except wikipedia.exceptions.DisambiguationError as e:
-		# print e.options
-
 	def what_happened(self):
 		dob = self.entry.get()
 		year = dob[-4:]
@@ -234,8 +230,6 @@ class AgeCalculator(tk.Tk):
 			tkinter.messagebox.showerror('error message', 'you did not provide any input')
 
 	def screen_shot(self):
-		# fullscreen
-		# ImageGrab.grab()
 
 		# part of the screen
 		img = ImageGrab.grab(bbox = (10, 55, 1150, 1200))
@@ -260,10 +254,7 @@ class AgeCalculator(tk.Tk):
 	def outputer(self):
 		try:
 			print(self.calculate())
-			#print(self.legalAge())
 			print(self.zeller())
-			#print(self.wikipedia())
-
 
 		except Exception:
 			tkinter.messagebox.showerror('error message',
@@ -271,6 +262,7 @@ class AgeCalculator(tk.Tk):
 
 	def gmail(self):
 		try:
+			# here you can edit signature of the email to be sent
 			gmail_signature = '\n\n\n\n-Omar'
 			# here you put the email address of the sender and secret key
 			yag = yagmail.SMTP('', '')
@@ -297,9 +289,7 @@ class AgeCalculator(tk.Tk):
 		except Exception:
 			tkinter.messagebox.showerror('error', 'why tweet nothing? provide input..')
 
-
 ''' This class helps move the output from the IDE to the GUI window '''
-
 
 class TextRedirector(object):
 	def __init__(self, widget, tag = "stdout"):
