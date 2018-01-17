@@ -1,6 +1,8 @@
 # Age-Calculator
-# Author:  OMAR BIN SALAMAH
-# Version: 2017-10-4
+Author:  OMAR BIN SALAMAH
+Version: 2017-10-4
+Python version: 3.x+
+
 Calculate age based on date of birth and more.
 
 This program determines the day of the week a person was born based on their date of birth.
