@@ -88,7 +88,6 @@ class AgeCalculator(tk.Tk):
 		self.entry_discription = tk.Label(self, text = 'DDMMYYYY')
 		self.entry_discription.place(x = 265, y = 100)
 		self.format_description = tk.Label(self, text = 'DDMMYYYY format')
-		#self.format_description.place(x=420, y=100)
 
 		# -----------------Entry and Button---------------------#
 		self.entry = tk.Entry(self, selectbackground = '#d8f7ee', selectforeground = '#a6c4bc')
@@ -96,8 +95,7 @@ class AgeCalculator(tk.Tk):
 		self.button = ttk.Button(self, text = 'show me!', style = "C.TButton", cursor = 'heart',
 		                         command = self.outputer)
 		self.button.place(x = 610, y = 102)
-		# self.button.config(font = ("FF Din", 12))
-
+		
 		# --------------DIRECTING OUTPUT TO WINDOW---------------#
 		self.scrollbar = ttk.Scrollbar(self, cursor = 'heart')
 		self.scrollbar.config(bg = 'black')
@@ -198,7 +196,7 @@ class AgeCalculator(tk.Tk):
 		m = int(dob[3:4])
 		y = int(dob[-4:])
 
-		if int(d) not in range(1, 32) or int(m) not in range(1, 13) or int(y) not in range(1700, 2017):
+		if int(d) not in range(1, 32) or int(m) not in range(1, 13) or int(y) not in range(1700, 2018):
 			return ''
 		else:
 			if m < 3:
